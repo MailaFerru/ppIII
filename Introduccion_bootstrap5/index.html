@@ -9,16 +9,59 @@
     </head>
     <body>
         <!--responsive: adaptativo-->
-       <!-- As a link -->
-    <nav class="navbar bg-primary" data-bs-theme="dark">
+       <!-- navegador web-->
+    <nav class="navbar bg-primary mb-3" data-bs-theme="dark"> <!--mb le deja espacio al boton, margen-->
      <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
      </div>
      </nav>
-     <div class="row">
-         <div class="col-lg-3"></div>
-         <!--filas y columnas, ordena contenido-->
-     </div>
-        
+       <div class="container"> <!--agrega margenes grandes-->
+         <div class="row">
+           <!--filas y columnas ordenadas-->
+           <!--quiebre-->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12 mb-3"> <!--tamaño de la tabla. configuracion del boton-->
+                <div class="mb-3">
+                    <label class="form-label">Nombre:</label> <!--agrega espacio sobre el input-->
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Apellido:</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-laber">Reseña</label>
+                    <textarea class="form-control" rows="3"></textarea> <!--texto en casillero-->
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span> <!--etiqueta $-->
+                    <input type="text" class="form-control" >
+                </div>
+                <div class="d-grid gap-2"> <!--ensancha el boton-->
+                    <button class="btn btn-primary" type="button">Button</button>
+                </div>
+            </div> <!--tamaño 3 en resoluciones grandes-->
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12"> <!--2da columna-->
+                <!--dividir coluna en dos partes: row=fila-->
+                <div class="row">
+                    <div class="col-lg-6"><!--columna1 dentro de la 2da-->
+                        <div class="mb-3">
+                            <label class="form-label">Edad</label>
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6"><!--columna2 dentro de la 2da-->
+                        <div class="mb-3">
+                            <label class="form-label">Fecha Nac.</label>
+                            <input type="date" class="form-control">
+                        </div>
+                        
+                    </div>
+                    <img src="Captura de pantalla_2023-04-17_21-02-00.png" class="img-fluid" alt="...">
+                </div>
+            </div>
+        </div>
+    </div>
     </body>
+</body>        
+ 
 </html>
