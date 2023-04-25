@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-3 col-sm-6 col-12 mb-3"> <!--tamaño de la columna-->
+                <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label class="form-control">Detalle</label>
+                    <textarea class="form-control" rows="3"></textarea> <!--texto en casillero-->
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span><!--etiqueta $-->
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">N°</span><!--etiqueta N°-->
+                            <input placeholder="Stock" type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">$</span>
+                            <input placeholder="Precio de venta" type="text" class="form-control">
+                        </div>
+                        <div class="col-lg-6">
+                            <select class="form-select">
+                                <option selected="-1">Categoria</option>
+                                <option value="0">Televisor</option>
+                                <option value="1">Heladera</option>
+                                <option value="2">Microondas</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+               
+                                    
+             </div>
+             <div class="col-lg-6 col-md-3 col-sm-6 col-12 mb-3"><!--columna dos-->
+                <div class="col-lg-6">
+                   <div class="row"> <!--row unico para dos columnas-->
+                    <div class="col-lg-6"><!--Columna una-->
+                        <div class="mb-3">
+                            <label class="form-control"> Fecha de alta</label>
+                            <input type="date" class="form-control">
+                        </div>
+                    </div>
+                   <div class="col-lg-6"><!--columna dos-->
+                            <div class="mb-3">
+                                <label class="form-control"> Hora de alta</label>
+                                <input type="time" class="form-control">
+                            </div>
+                        
+                    </div>
+                </div> 
+                
+                <img class="img-fluid" src="index.png" alt="">
+    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
