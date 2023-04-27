@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-
+    <nav class="navbar navbar-light" style="background-color:yellow"  <!--mb le deja espacio al boton, margen-->
+        <div class="container-fluid">
+         <a class="navbar-brand" href="#">TP N°1</a>
+        </div>
+        </nav>
+    
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-3 col-sm-6 col-12 mb-3"> <!--tamaño de la columna-->
                 <div class="mb-3">
+                    <h4>Alta producto</h4>
                     <label class="form-label">Descripción</label>
                     <input type="text" class="form-control">
                 </div>
@@ -37,13 +43,18 @@
                             <input placeholder="Precio de venta" type="text" class="form-control">
                         </div>
                         <div class="col-lg-6">
-                            <select class="form-select">
+                            <select class="form-select mb-3">
                                 <option selected="-1">Categoria</option>
                                 <option value="0">Televisor</option>
                                 <option value="1">Heladera</option>
                                 <option value="2">Microondas</option>
                             </select>
                         </div>
+                            <div class="mb-3">
+                                <div class="d-grid gap-2 d-md-flex justify-content-md-end"> <!--ensancha el boton-->
+                                <button class="btn btn-success" type="button">Guardar producto</button>
+                            </div>
+                         </div>
                     </div>
                 </div>
                
@@ -52,14 +63,14 @@
              <div class="col-lg-6 col-md-3 col-sm-6 col-12 mb-3"><!--columna dos-->
                 <div class="col-lg-6">
                    <div class="row"> <!--row unico para dos columnas-->
-                    <div class="col-lg-6"><!--Columna una-->
-                        <div class="mb-3">
+                    <div class="col-lg-6"><!--Columna uno-->
+                        <div class="input-group mb-3">
                             <label class="form-control"> Fecha de alta</label>
                             <input type="date" class="form-control">
                         </div>
                     </div>
                    <div class="col-lg-6"><!--columna dos-->
-                            <div class="mb-3">
+                            <div class="input group mb-3">
                                 <label class="form-control"> Hora de alta</label>
                                 <input type="time" class="form-control">
                             </div>
