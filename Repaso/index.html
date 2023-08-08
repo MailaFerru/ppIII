@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repaso</title>
+    <link rel="stylesheet" href="bootstrap.min.css"> <!--estilos-->
+</head>
+<body>
+    <!--clases-->
+    <nav class="navbar navbar-light" style="background-color:yellow"  <!--mb le deja espacio al boton, margen-->
+        <div class="container-fluid">
+         <a class="navbar-brand" href="#">Repaso</a>
+        </div>
+        </nav>
+    <div class="container mt-3"> <!--mt-3 margen superior del container. Deja espacio-->
+    <div class="container"> <!--clase creada: .container-->
+            <h4>Introduccion a JavaScript</h4> <!--titulo-->
+            <div class="row"> <!--.row-->
+                <div class="col-lg-3">
+                    <div class="mb-3">                       
+                        <label for="" class="form-label">Dato 1:</label> <!--agiliza la estructura label.form-label-->
+                        <input id="inp_d1" type="number" class="form-control"> <!--input.form-control. id=unico, identifica a dato1. debe empezar con inp (está dentro del input)-->
+                    </div>
+                    <div class="mb-3">
+                        <label for="" class="form-label">Dato 2:</label>
+                        <input id="inp_d2" type="number" class="form-control"> <!--id: identifica a dato2. Está dentro de input, empieza con inp-->
+                    </div>
+                    <button id="btn_calcular" class="btn btn -success">Calcular</button> <!--concatena dos clases button.btn.btn.-success-->
+                </div>
+            </div>
+    </div>
+    </div>
+<!--Lenguaje java. Inicio de script-->
+<script> 
+// funcion clásica. Se nombra con ar-er-ir
+    function calcular() { //metodos=funciones. Asignación de elementos
+        let dato1 = document.getElementById("inp_d1").value //reconozco elemento en el documento por ID
+        //variable que nace y muera dentro de las palomitas {} se usa let nombrevariable = 
+        let dato2 = document.getElementById("inp_d2").value //value:asociado a input
+
+        let resultado = Number(dato1) + Number(dato2) 
+        console.log(resultado) //testea resultado
+    }//nota  /* mensaje */
+    document.getElementById("btn_calcular").addEventListener("click", calcular) //escucha eventos, ante click activa función calcular
+</script>
+</body>
+</html>
