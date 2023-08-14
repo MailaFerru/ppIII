@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8"><!--acepta acentos-->
+        <title>Introducción a HTML5</title>
+    </head>
+    <body style="background-image:linear-gradient(blue,red);">
+        <h4>Creando elementos</h4>  <!--titulo-->
+        <p>Introduccion a elementos <b>html</b> y sus propiedades</p> <!--parrafo, etiq. b en negrita-->
+        <div>
+            <label for=>DNI</label>  <!--etiqueta arriba del boton-->
+            <input placeholder="Ingrese DNI" type="number"> <!--aparece dentro del boton-->
+        </div>
+        <div>
+            <label for=>Fecha de Nac.</label>
+            <input type="date">
+        </div>
+        <div>
+            <label for="">Semanal</label>
+            <input type="week">
+        </div>
+        <div>
+            <label for="">Tipo de operacion</label>
+            <select > <!--opciones para seleccionar/valores que representan-->
+                <option selected disabled value="-1">Seleccione</option> <!--indicador de lo q tengo que hacer(desabilitada)-->
+                <option value="0">Sumar</option>
+                <option value="1">Resta</option> 
+                <option value="2">Multiplicar</option>
+            </select>
+        </div>
+        <a target="_blanck" href="https://www.google.com.ar">Google</a><!--Redirecciona a la pag web-->
+        
+        <br> <!--salto de linea. enter-->
+        
+        <button style="background-color: blueviolet;color: white;">Aceptar</button> <!--cambiar color de boton ccs, dentro de "" de style-->
+        <button style="background-color: blueviolet;color: white;">Cancelar</button><!--mala practica-->
+        <button class="boton">Aceptar</button>
+        <button class="boton">Cancelar</button>
+        <style> 
+    
+            .boton { 
+                background-color: blue;
+                color: white;
+            }             
+        </style>
+    </body>
+</html>
