@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+    <link rel="stylesheet" href="bootstrap.min.css"> <!--conecto bootstrap-->
+</head>
+<body>
+    <!--Navbar-->
+    <div class="container mt-3"> <!--mt-3 se despega del navbar-->
+        <div class="row">
+            <div class="col-lg-6"> <!--columna1-->
+                <div class="mb-3">
+                    <label class="form-label">Operación</label> <!--etiqueta-->
+                    <select class="form-select" id="slt_operacion"> <!--boton de items-->
+                        <option selected disable value="-1">Seleccione operación</option> <!--opcion deshabilitada. Por defecto no se puede seleccionar, es para orientar al usuario-->
+                        <option value="0">Sumar</option>
+                        <option value="1">Restar</option>
+                        <option value="2">Multiplicar</option>
+                        <option value="3">Dividir</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Dato 1</label>
+                    <input id="inp_d1" class="form-control" type="number">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Dato 2</label>
+                    <input id="inp_d2" class="form-control" type="number">
+                </div>
+                <!--cuando se trata de una funcion en onclick usar ()-->
+                <button onclick="recolectar()" id="btn_calcular" class="btn btn-success">Calcular</button>
+            </div>
+            <div class="col-lg-6"><!--columna2-->
+                <h4 id="h_resultado"></h4>
+            </div>
+        </div>
+    </div>
+    <script src="funciones.js"></script> <!--conecto script funciones.js-->
+</body>
+</html>
