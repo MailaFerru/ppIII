@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ley de Ohm</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    
+</head>
+<body>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg6">
+                <div class="mb-3">
+                    <h1>Según la ley de Ohm:</h1> <!--Título-->
+                    <img src="6004178-dmm-whatis-ohm-2-715x360.jpg" class="img-fluid"> <!--imágen-->
+                    <div class="mb-3">
+                        <h4>Con ayuda de las fórmulas,</h4> <!--subtítulo-->
+                     <label class="form-label">¿Qué calculo desea hacer?</label> <!--pegadito al desplegamiento de opciones-->
+                            <select onchange="recolectar()" id="op"> <!--opciones-->
+                                <option selected disable value="-1">Seleccione operación</option> 
+                                <option value="0">Corriente</option>
+                                <option value="1">Tensión</option>
+                                <option value="2">Resistencia</option>                    
+                            </select>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label id="d1"></label> <!--dato1-->
+                    <input id="inp_d1" type="number"><!--ID del dato 1-->
+                </div>
+                <div class="mb-3">
+                    <label id="d2"></label> <!--Dato2-->
+                    <input id="inp_d2" type="number"> <!--ID del dato2-->
+                </div>
+                <button onclick="calcular()" id="btn_calcular" class="btn btn-success">Calcular</button> <!--boton-->
+                
+                
+            </div>
+            <div class="col-lg-6"><!--columna2-->
+                <h4 id="h_resultado"></h4> <!--Resultado en pantalla-->
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>
