@@ -1,6 +1,6 @@
 function recolectar(){
-    document.getElementById("h_resultado").textContent = '' //vaciar resultado
-    document.getElementById("h_resul").textContent = '' //vaciar resultado 
+    document.getElementById("h_resultado").textContent = '' //vaciar resultado precio de lista
+    document.getElementById("h_resul").textContent = '' //vaciar resultado precio c/ descuento
 }
 function calcular(){ //precio de lista
     const seleccion = document.getElementById("op").value
@@ -16,6 +16,9 @@ function calcular(){ //precio de lista
 document.getElementById("h_resultado").textContent = 'El precio de lista es: $'+result
 }
 function descuento() { //precio con descuento 
+
+    calcular()
+
     const seleccion = document.getElementById("op").value
 
     let resultado = null;
@@ -30,7 +33,7 @@ function descuento() { //precio con descuento
         }
     }
    
- document.getElementById("h_resul").textContent = 'Con descuento: $'+resultado
+    document.getElementById("h_resul").textContent = 'Con descuento: $'+resultado
 
 }
 
